@@ -1,0 +1,30 @@
+body { margin: 0; font-family: 'Poppins', sans-serif; background: #f8f9fa; }
+header { background: #75681d; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 700; font-size: 22px; }
+nav ul { list-style: none; display: flex; gap: 20px; padding: 0; }
+nav ul li { position: relative; }
+nav a { text-decoration: none; font-weight: 500; color: rgb(218, 187, 187); }
+.dropdown-menu { display: none; position: absolute; top: 30px; background: white; padding: 10px; list-style: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.dropdown:hover .dropdown-menu { display: block; }
+.hero { background: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d') no-repeat center center/cover; height: 85vh; display: flex; align-items: center; padding-left: 60px; color: white; }
+.hero-text {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+.hero h1 { font-size: 48px; }
+.hero button { padding: 12px 25px; background: #edbe05; border: none; cursor: pointer; font-weight: 600; }
+.features { display: flex; justify-content: center; gap: 30px; padding: 60px; }
+.feature-box { background: rgb(114, 102, 102); padding: 30px; width: 250px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
+.cta { text-align: center; padding: 60px; background: #f1ee09; }
+.btn { display: inline-block; padding: 12px 25px; background: black; color: rgb(237, 234, 234); text-decoration: none; }
+.page-content { padding: 60px; max-width: 800px; margin: auto; }
+form { display: flex; flex-direction: column; gap: 15px; }
+input, select, textarea { padding: 12px; font-size: 15px; }
+button { padding: 12px; background: #ffcc00; border: none; font-weight: 600; cursor: pointer; }
+.footer-grid { display: flex; justify-content: space-around; padding: 40px; background: #222; color: white; }
+.footer-grid a { color: #ffcc00; text-decoration: none; }
+footer .copyright { text-align: center; background: #111; color: white; padding: 15px; }
+@media(max-width:768px){ .features{ flex-direction: column; align-items:center; } .hero{ padding:20px; text-align:center; } }
