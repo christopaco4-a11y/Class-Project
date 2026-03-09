@@ -24,6 +24,40 @@ nav a { text-decoration: none; font-weight: 500; color: rgb(218, 187, 187); }
 form { display: flex; flex-direction: column; gap: 15px; }
 input, select, textarea { padding: 12px; font-size: 15px; }
 button { padding: 12px; background: #ffcc00; border: none; font-weight: 600; cursor: pointer; }
+
+/* Header navigation button */
+.btn-nav {
+    padding: 8px 18px;
+    background: #ffcc00;
+    color: #111;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-nav:hover {
+    background: #edbe05;
+    color: #000;
+}
+
+/* Hero section button */
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: #111;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #edbe05;
+    color: #000;
+}
 .footer-grid { display: flex; justify-content: space-around; padding: 40px; background: #222; color: white; }
 .footer-grid a { color: #ffcc00; text-decoration: none; }
 footer .copyright { text-align: center; background: #111; color: white; padding: 15px; }
@@ -352,4 +386,30 @@ body.dark-mode .login-links a:hover {
     header {
         padding: 15px 20px;
     }
+}
+/* Login links side by side */
+.login-links-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Optional: style links to match your theme */
+.login-links-flex a {
+    text-decoration: none;
+    color: #0a1f44;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+body.dark-mode .login-links-flex a {
+    color: #ffcc00;
+}
+
+.login-links-flex a:hover {
+    color: #ff9900;
+}
+
+body.dark-mode .login-links-flex a:hover {
+    color: #ffd633;
 }
