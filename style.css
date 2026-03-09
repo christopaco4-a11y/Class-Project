@@ -167,3 +167,189 @@ opacity:1;
 transform:translateY(0);
 }
 }
+
+/* =======================
+   LOGIN PAGE STYLES
+   ======================= */
+
+/* Full-page background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+/* Header logo and dark toggle button */
+header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.dark-toggle {
+    background: #ffcc00;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.dark-mode .dark-toggle {
+    background: #555;
+    color: #fff;
+}
+
+body.dark-mode header .logo {
+    color: #fff;
+}
+
+/* Login section centered */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+}
+
+/* Login box styling */
+.login-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease;
+}
+
+body.dark-mode .login-box {
+    background: rgba(30, 30, 30, 0.85);
+    color: #eee;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0a1f44;
+}
+
+body.dark-mode .login-box h2 {
+    color: #fff;
+}
+
+.login-box input {
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+body.dark-mode .login-box input {
+    background: #222;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Password container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+/* Eye icon toggle */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+.toggle-password:hover {
+    color: #ff9900;
+}
+
+body.dark-mode .toggle-password {
+    color: #fff;
+}
+
+body.dark-mode .toggle-password:hover {
+    color: #ffcc00;
+}
+
+/* Login button */
+.login-box button[type="submit"] {
+    padding: 12px;
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-box button[type="submit"]:hover {
+    background: #edbe05;
+}
+
+/* Forgot password link */
+.login-links {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #0a1f44;
+}
+
+body.dark-mode .login-links a {
+    color: #ffcc00;
+}
+
+.login-links a:hover {
+    color: #ff9900;
+}
+
+body.dark-mode .login-links a:hover {
+    color: #ffd633;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+}
