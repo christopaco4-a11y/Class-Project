@@ -353,3 +353,29 @@ body.dark-mode .login-links a:hover {
         padding: 15px 20px;
     }
 }
+/* Login links side by side */
+.login-links-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Optional: style links to match your theme */
+.login-links-flex a {
+    text-decoration: none;
+    color: #0a1f44;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+body.dark-mode .login-links-flex a {
+    color: #ffcc00;
+}
+
+.login-links-flex a:hover {
+    color: #ff9900;
+}
+
+body.dark-mode .login-links-flex a:hover {
+    color: #ffd633;
+}
