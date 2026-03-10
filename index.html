@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChrisExpress Logistics</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChrisExpress Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <header>
     <div class="logo">ChrisExpress</div>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0);" class="dropbtn">Services ▾</a>
+                <a href="#">Services ▾</a>
                 <ul class="dropdown-menu">
                     <li><a href="same-day.html">Same Day Delivery</a></li>
                     <li><a href="international.html">International Shipping</a></li>
                     <li><a href="ecommerce.html">E-commerce Logistics</a></li>
                 </ul>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                  <li><a href="login-page.html">login</a></li>
         </ul>
     </nav>
 </header>
-
 <section class="hero">
     <div class="hero-text">
         <h1>Fast, Secure & Nationwide Delivery</h1>
         <p>Trusted logistics partner for businesses and individuals across Africa.</p>
-        <div style="margin-top:15px;">
-            <button onclick="trackPackage()">Track Shipment</button>
-            <a href="register.html" class="btn">Create Account</a>
-        </div>
+        <button onclick="trackPackage()">Track Shipment</button>
     </div>
 </section>
-
 <section class="features">
     <div class="feature-box">
         <h3>Real-Time Tracking</h3>
@@ -50,16 +45,14 @@
     </div>
     <div class="feature-box">
         <h3>Affordable Rates</h3>
-        <p>Competitive pricing for all shipping categories.</p>
+<p>Competitive pricing for all shipping categories.</p>
     </div>
 </section>
-
 <section class="cta">
     <h2>Need Reliable Delivery?</h2>
     <p>Book a pickup today and experience world-class logistics service.</p>
     <a href="contact.html" class="btn">Book Now</a>
 </section>
-
 <footer>
     <div class="footer-grid">
         <div>
@@ -74,35 +67,13 @@
         <div>
             <h4>Contact</h4>
             <p>Email: christopaco481@gmail.com</p>
-            <p>Phone: +234 70 694 7241</p>
+<p>Phone: +234 70 694 7241</p>
         </div>
     </div>
     <p class="copyright">© 2026 ChrisExpress Logistics</p>
 </footer>
-
-<script>
-// ===== Dropdown toggle =====
-document.querySelectorAll('.dropbtn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const menu = btn.nextElementSibling;
-        menu.classList.toggle('show');
-    });
-});
-
-// Close dropdown if clicking outside
-window.addEventListener('click', e => {
-    if (!e.target.matches('.dropbtn')) {
-        document.querySelectorAll('.dropdown-menu').forEach(menu => {
-            menu.classList.remove('show');
-        });
-    }
-});
-
-// ===== Placeholder Track Package function =====
-function trackPackage() {
-    alert("Tracking feature coming soon!");
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
+

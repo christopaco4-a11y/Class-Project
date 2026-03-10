@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login | ChrisExpress</title>
-<link rel="stylesheet" href="style.css">
-<!-- Font Awesome for eye toggle -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ChrisExpress</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Contact - ChrisExpress</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
 <header>
-    <div class="logo">ChrisExpress</div>
-    <button id="darkModeToggle" class="dark-toggle">🌙</button>
+<div class="logo">ChrisExpress</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+
+<li class="dropdown">
+<a href="#">Services ▾</a>
+<ul class="dropdown-menu">
+<li><a href="same-day.html">Same Day Delivery</a></li>
+<li><a href="international.html">International Shipping</a></li>
+<li><a href="ecommerce.html">E-commerce Logistics</a></li>
+</ul>
+</li>
+
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+ <li><a href="login-page.html">login</a></li>
+</ul>
+</nav>
 </header>
 
 <section class="login-section">
@@ -25,37 +52,30 @@
             <label for="password">Password</label>
             <div class="password-container">
                 <input type="password" id="password" placeholder="Enter your password" required>
-                <span id="togglePassword" class="toggle-password">
-                    <i class="fas fa-eye"></i>
-                </span>
+                <span id="togglePassword" class="toggle-password">👁️</span>
             </div>
 
             <button type="submit">Login</button>
 
-            <!-- Links section -->
-            <div class="login-links-flex">
-                <a href="forgoten-password.html">Forgot Password?</a>
-                <a href="register.html">Create New Account</a>
-            </div>
+            <p class="login-links">
+                <a href="#">Forgot Password?</a>
+            </p>
         </form>
     </div>
 </section>
 
 <script>
-// ===== Password toggle using Font Awesome =====
+// ===== Password toggle =====
 const togglePassword = document.getElementById('togglePassword');
 const passwordInput = document.getElementById('password');
-const icon = togglePassword.querySelector('i');
 
 togglePassword.addEventListener('click', () => {
     if(passwordInput.type === 'password') {
         passwordInput.type = 'text';
-        icon.classList.remove('fa-eye');
-        icon.classList.add('fa-eye-slash');
+        togglePassword.textContent = '🙈'; // closed eye
     } else {
         passwordInput.type = 'password';
-        icon.classList.remove('fa-eye-slash');
-        icon.classList.add('fa-eye');
+        togglePassword.textContent = '👁️'; // open eye
     }
 });
 
